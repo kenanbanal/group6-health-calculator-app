@@ -1,0 +1,58 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>Home</ion-title>
+  </ion-navbar>
+</ion-header>
+
+
+<ion-content padding>
+  <h2>DAILY CALORIE INTAKE CALCULATOR</h2>
+  <p>
+   
+  </p>
+  
+<img src= "https://d18lkz4dllo6v2.cloudfront.net/cumulus_uploads/entry/2018-12-10/GettyImages-848079198.jpg?w=660">
+
+  <ion-item>
+    <ion-label color="dark"> Sex: </ion-label>
+    <ion-select interface="popover" [(ngModel)]="sex">
+      <ion-option value="m">Male</ion-option>
+      <ion-option value="f">Female</ion-option>
+    </ion-select>
+  </ion-item>
+
+  <ion-item>
+    <ion-label>Height in Centimeters:</ion-label>
+    <ion-input type="number" [(ngModel)]="height"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label>Weight in Kilograms:</ion-label>
+    <ion-input type="number" [(ngModel)]="weight"></ion-input>
+  </ion-item>
+
+ <ion-item>
+    <ion-label>Age in Years:</ion-label>
+    <ion-input type="number" [(ngModel)]="age"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label color="dark">Activity Level</ion-label>
+    <ion-select interface="popover" [(ngModel)]="activity">
+    <ion-option value="1">Little to no exercise</ion-option>
+    <ion-option value="2">Light exercise 1-2 days/week</ion-option>
+    <ion-option value="3">Moderate exercise 2-3 days/week</ion-option>
+    <ion-option value="4">Hard exercise 4-5 days/week</ion-option>
+    <ion-option value="5">Very hard exercise 6-7 days/week</ion-option>
+    <ion-option value="6">Professional athlete</ion-option>
+    </ion-select>
+  </ion-item>
+
+  <button ion-button color="primary" (click)="calculateTHEDCI()">
+    Calculate
+  </button>
+
+  <ion-item class="itemclear" *ngIf="activity">
+    <h2 class="heading2">Daily Calorie Intake per day: <code> {{theDCI}}</code> </h2>
+  </ion-item>
+</ion-content>

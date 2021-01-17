@@ -1,0 +1,35 @@
+ion-content{
+   background: linear-gradient(to bottom, #8e2de2, #4a00e0);
+   opacity: 85%
+}
+
+h2{
+  color: rgb(51, 255, 143);
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif
+}
+
+p {
+  font-family: 'Courier New', Courier, monospace;
+  text-align: justify;
+  color: antiquewhite;
+}
+
+ion-item{
+  background: element(blue);
+  opacity: 70%;
+}
+
+a{
+  color: green;
+  opacity: 50;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+heading2{
+  color: purple;
+}
+
+code{
+  color: green;
+  font-family: 'Courier New', Courier, monospace;
+}
