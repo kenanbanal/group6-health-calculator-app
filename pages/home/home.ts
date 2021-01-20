@@ -13,6 +13,7 @@ export class HomePage {
   age: number;
   theDCI: number;
   
+  error: string;
   sex: string;
   activity: string;
   
@@ -27,7 +28,7 @@ export class HomePage {
       this.theBMR = 10 * this.weight + 6.25 * this.height - 5 * this.age - 161;
     }
     else{
-      this.theBMR = 0;
+      this.error = "ERROR";
     }
 
 
@@ -50,7 +51,7 @@ export class HomePage {
       this.theDCI = this.theBMR * 2.3;
     } 
     else{
-      this.theDCI = 0;
+      this.error = "ERROR";
     }
   }
 }
